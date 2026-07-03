@@ -1,10 +1,10 @@
 # 文件结构
 ```text
 program_and_data/
-├── asr_utils.py    ← 新增  共享工具模块
-├── test.py         ← 已修改  单文件 ASR 转录
-├── pichuli.py      ← 已修改  批量 ASR 转录
-└── FireRedASR2S/   ← 未修改  ASR 系统 + 预训练模型
+├── asr_utils.py    
+├── test.py         ← 单文件 ASR 转录
+├── pichuli.py      ← 批量 ASR 转录
+└── FireRedASR2S/   ← ASR 系统 + 预训练模型
 ```
 
 # QuickStart
@@ -15,6 +15,8 @@ pip install -r FireRedASR2S/requirements.txt
 sudo apt install ffmpeg
 
 ## 3. AED模型
+参考 https://www.modelscope.cn/models/xukaituo/FireRedASR2-AED/ 获取ASR模型权重
+仓库里没有权重，要自己下载，或者直接clone FireRedASR2-AED代码也行
 FireRedASR2S/pretrained_models/FireRedASR2-AED/
 
 ## 4. 运行
