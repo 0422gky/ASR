@@ -95,7 +95,7 @@ python batch_process.py test_audio_folder --postprocess
 递归批量识别，并启用保守模糊纠错：
 
 ```bash
-python batch_process.py train_audio_folder -r --postprocess --enable-fuzzy
+python batch_process.py train_audio_folder -r --postprocess --enable-fuzzy --terms-config configs/industrial_terms.yaml
 ```
 
 使用自定义术语词表：
