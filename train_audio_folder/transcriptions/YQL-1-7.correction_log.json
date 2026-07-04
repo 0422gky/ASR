@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "rule": "spoken_error_code",
+    "source": "负一零六七幺八六幺三五",
+    "replacement": "-1067186135",
+    "span": [
+      9,
+      20
+    ]
+  }
+]
