@@ -1,0 +1,518 @@
+[0.842,2.325]	0	none	[ENS]
+[5.870,8.830]	SPK003	女	北京爱数智慧语言云采集。
+[10.820,11.722]	0	none	[NPS]
+[12.230,13.570]	SPK003	女	hello hello。
+[18.717,25.807]	SPK003	女	哎，怎么说呢？你知道在china嘛，这里有many many festival。
+[26.150,33.372]	SPK003	女	嗯，可能the most important festival is spring festival。do you know spring festival？就春节。
+[33.620,34.780]	SPK003	女	spring festival。
+[35.750,36.551]	SPK003	女	嗯，对。
+[36.551,38.382]	0	none	[*]
+[38.607,39.070]	SPK003	女	嗯。
+[40.902,41.812]	SPK003	女	dumplings。
+[41.812,42.508]	0	none	[ENS]
+[42.508,43.087]	0	none	[SONANT]
+[43.087,48.583]	SPK003	女	my best，嗯，food is dumplings，嗯，pork dumplings。
+[50.107,50.630]	0	none	[*]
+[50.630,52.150]	SPK003	女	yeah，就猪肉馅儿的。
+[53.390,54.045]	SPK003	女	然后。
+[54.438,56.950]	SPK003	女	然后你觉得在春节。
+[59.600,62.170]	SPK003	女	啊，for dumplings。嗯。
+[63.128,67.839]	SPK003	女	ok，我想问一下，在过春节的时候，前前后后就是。
+[67.861,72.844]	SPK003	女	before the spring festival and after the festival，what will you do？
+[73.100,77.770]	SPK003	女	就你在，嗯，过那个春节的时候，你在过春节之前。
+[77.990,82.660]	SPK003	女	你要做什么？what will you do？在之后after the spring festival what will you do？
+[85.550,86.110]	SPK003	女	yeah。
+[86.450,86.950]	SPK003	女	yeah。
+[89.450,91.480]	SPK003	女	啊you need to save money。
+[91.838,92.890]	SPK003	女	save money。
+[93.260,95.665]	SPK003	女	yeah。and when i嗯。
+[96.336,102.250]	SPK003	女	我们就从小的时候聊吧，when you were when you were，when you were very young。
+[102.500,105.442]	SPK003	女	在我小的时候，i can't save money。
+[105.770,110.178]	SPK003	女	但是如果我得到了好的成绩，就good，嗯good grades。
+[110.450,114.685]	SPK003	女	嗯我就可能会被直接拉去buy new clothes。
+[115.575,116.300]	0	none	[ENS]
+[116.300,117.641]	SPK003	女	买新衣服。
+[118.177,121.420]	SPK003	女	yeah，new trousers and new shoes。
+[121.730,123.670]	SPK003	女	and cut my hair。
+[123.950,125.260]	SPK003	女	就是剪头发。
+[125.780,129.729]	SPK003	女	yeah。剪头发，然后呢，就去。
+[129.836,130.282]	0	none	[*]
+[130.287,132.400]	SPK003	女	过春节的spring festival。
+[132.590,135.730]	SPK003	女	这就在春节之前了，我需要去。
+[136.100,137.314]	SPK003	女	do the things。
+[138.890,139.341]	SPK003	女	in。
+[143.896,144.430]	SPK003	女	yeah。
+[144.830,145.330]	SPK003	女	yeah。
+[146.600,147.370]	SPK003	女	yeah。
+[148.310,154.480]	SPK003	女	yeah i know，嗯。在北方的话，他们可能比较喜欢吃汤圆。
+[154.760,160.570]	SPK003	女	汤圆，the rice ball，其实它里面就加的是一些，黑芝麻之类的。
+[160.807,161.590]	SPK003	女	然后。
+[161.990,167.770]	SPK003	女	在南方in the south。对我们可能会比较喜欢去吃dumplings。
+[170.240,170.942]	SPK003	女	嗯。
+[171.202,171.790]	0	none	[*]
+[171.920,173.228]	SPK003	女	到南方和北方。
+[175.910,176.530]	SPK003	女	yeah。
+[179.348,179.800]	SPK003	女	yeah。
+[183.320,183.910]	SPK003	女	yeah。
+[185.840,188.290]	SPK003	女	yeah，made in dumplings，yeah。
+[189.470,192.430]	0	none	[*]
+[197.690,199.360]	SPK003	女	yeah，that's different。
+[199.760,203.200]	SPK003	女	yeah，that's different，并且我们在过年之前。
+[203.630,204.130]	SPK003	女	嗯。
+[204.830,210.985]	SPK003	女	yeah。并且在，过节之前我们还需要去买。去buy。
+[210.985,211.630]	0	none	[*]
+[211.630,215.380]	SPK003	女	buy lanterns，就是买灯笼，lanterns。
+[215.660,216.820]	SPK003	女	然后还要贴对。
+[216.820,217.323]	0	none	[*]
+[217.820,225.192]	SPK003	女	yeah，and we need to sweep the floor，and sweep the window，sweep the table就。
+[225.380,229.971]	SPK003	女	你需要去打扫，房间，桌子，窗户。
+[235.433,237.488]	0	none	[ENS]
+[238.670,239.320]	SPK003	女	yeah。
+[240.860,241.540]	SPK003	女	yeah。
+[242.240,242.800]	SPK003	女	yeah。
+[243.200,247.420]	SPK003	女	嗯，你们家in your family，你们会不会贴春联呢？
+[249.560,250.120]	SPK003	女	yeah。
+[253.790,254.320]	SPK003	女	yeah。
+[256.820,258.402]	SPK003	女	哦，i know。
+[258.637,263.830]	SPK003	女	your father or your grandparents your grandfather will write down。
+[264.307,264.730]	SPK003	女	yeah。
+[264.950,270.680]	SPK003	女	ok i know，me too，my grandfather will help my family to write down。
+[270.680,271.243]	0	none	[*]
+[271.400,274.270]	SPK003	女	我们就会把这个贴到door上。
+[276.140,277.128]	SPK003	女	嗯，对。
+[277.460,281.456]	SPK003	女	对。然后呢，我们需要去，do the house。
+[283.760,284.260]	0	none	[*]
+[285.980,291.538]	SPK003	女	yeah yeah say。嗯set the firecrackers。when we were。
+[291.538,291.784]	0	none	[*]
+[291.784,296.314]	SPK003	女	very young，当我们小的时候，我们就会去放鞭炮放烟花。
+[296.690,300.220]	SPK003	女	然后呢，嗯。in the morning you know。
+[300.440,303.626]	SPK003	女	in the morning，就在春节spring festival的。
+[303.626,303.950]	0	none	[*]
+[303.950,305.300]	SPK003	女	早上我们就会。
+[305.780,311.380]	SPK003	女	receive the red envelopes，就是收到红色的红包。
+[312.650,317.367]	SPK003	女	yeah，a lot of money right，one hundred two hundred three hundred。
+[319.550,320.110]	SPK003	女	yeah。
+[322.940,323.650]	SPK003	女	yeah。
+[324.235,324.777]	SPK003	女	yeah。
+[325.670,331.935]	SPK003	女	yeah your mom your father，or your mother your grandparents will give to you。
+[331.935,337.090]	SPK003	女	就你的，嗯，爸爸妈妈长辈啊，全都会给你拿压岁钱。
+[337.700,338.200]	SPK003	女	right？
+[339.200,339.843]	SPK003	女	yeah。
+[340.130,341.050]	SPK003	女	然后呢。
+[343.790,344.470]	0	none	[*]
+[346.820,347.432]	SPK003	女	yeah。
+[353.780,354.580]	SPK003	女	yeah。
+[357.710,365.132]	SPK003	女	me too，that's very great in each now。in the morning我们吃了，dumplings之后呢，我们。
+[365.360,371.530]	SPK003	女	全家whole family will climb the mountain，就我们需要去上次，上山。
+[371.660,377.892]	SPK003	女	然后go to the temple就是要去，yeah去寺庙里面。yeah go to the temple。
+[378.050,380.860]	SPK003	女	并且呢，我们会去祭拜去。
+[380.960,386.500]	SPK003	女	许愿have a good wish for the next year，就对未来的一年进行一个许愿。
+[386.720,390.122]	SPK003	女	所以看得出来我们两个家庭our family。
+[390.439,392.136]	SPK003	女	嗯，have difference。
+[399.260,400.060]	SPK003	女	yeah。
+[400.670,401.950]	SPK003	女	not very。
+[409.061,410.254]	0	none	[NPS]
+[411.710,412.360]	SPK003	女	yeah。
+[412.940,413.800]	SPK003	女	嗯。
+[414.110,415.540]	SPK003	女	you have a good wish。
+[416.810,417.490]	SPK003	女	yeah。
+[419.630,421.240]	SPK003	女	嗯，happy everyday。
+[421.550,423.070]	SPK003	女	get good grades。
+[423.290,425.631]	SPK003	女	have a good health，have a good body。
+[428.009,428.512]	SPK003	女	yeah。
+[431.631,432.165]	0	none	[*]
+[435.740,439.101]	SPK003	女	yeah。we will visit，嗯。
+[439.280,445.210]	SPK003	女	就第一天the first day in the morning we eat dumplings and climb the mountain。
+[445.520,449.200]	SPK003	女	嗯，在下午的时候，可能大人，会选择。
+[449.630,450.400]	SPK003	女	待在。
+[452.510,459.461]	SPK003	女	去，去山里面去，或者去寺庙go to the temple or go to the mountain to，嗯。
+[459.980,466.563]	SPK003	女	许愿。然后呢下午in the afternoon，我们所有人可能会聚在一起。
+[466.940,468.850]	SPK003	女	嗯we watch the t v。
+[469.280,472.735]	SPK003	女	or eat the fruits，eat the oranges。
+[472.735,479.140]	SPK003	女	在过年的时候，沙糖桔is the orange yeah it's very，important。
+[479.480,484.588]	SPK003	女	yeah。every house，every family will buy the oranges。
+[484.588,490.244]	SPK003	女	就每一个家庭在那个时候都会，买一些砂糖橘子oranges at home。
+[491.158,493.450]	SPK003	女	然后，嗯，下午。
+[493.700,498.220]	SPK003	女	下午的时候我们就会聚在一起stay together and eat the。
+[498.470,502.150]	SPK003	女	eat the。yeah we eat the oranges。
+[502.460,503.410]	SPK003	女	and。
+[504.650,511.987]	SPK003	女	yeah and at night，就在，就在晚上的时候，我们就会全家一起eat together，eat the fish。
+[513.230,515.032]	SPK003	女	yeah，年年有余。
+[515.240,519.070]	SPK003	女	that means every year you have you have a lot things。
+[519.440,522.144]	SPK003	女	就意味着你在每一年都有很多。
+[522.980,528.483]	SPK003	女	有，剩余的东西，对。在中国传统中国就tradition china来说。
+[528.680,532.420]	SPK003	女	那就是一项非常important thing，在。
+[532.730,534.271]	SPK003	女	在dinner上。
+[539.090,545.070]	SPK003	女	嗯，并且在吃晚餐，就when you eat the dinner，你们餐桌上最。
+[545.450,547.942]	SPK003	女	important食物是什么呢？
+[550.220,550.772]	SPK003	女	fish。
+[550.772,551.311]	0	none	[LAUGHTER]
+[551.311,552.067]	SPK003	女	the thing。
+[552.067,552.573]	0	none	[ENS]
+[552.573,554.323]	SPK003	女	对，因为，every。
+[554.870,558.850]	SPK003	女	every family every house，we will eat the fish。
+[565.430,566.020]	SPK003	女	yeah。
+[567.426,569.770]	SPK003	女	对对对，that's right，that's right。
+[570.470,572.920]	SPK003	女	yeah。and that moment。
+[575.360,580.090]	SPK003	女	yeah，we are very happy，we eat pork。
+[582.920,583.570]	SPK003	女	yeah。
+[583.850,584.530]	SPK003	女	i know。
+[587.270,590.260]	SPK003	女	it's bad right？it's，how to say？
+[591.110,592.890]	SPK003	女	yeah it's very yuck。
+[593.270,594.040]	SPK003	女	yuck。
+[595.070,598.390]	SPK003	女	yeah it's not very delicious。就你在。
+[600.380,607.043]	SPK003	女	对其实聊到这些美食，我已经迫不及待的过这个spring festival了，就我已经期待。
+[607.460,609.400]	SPK003	女	过新的一年的春节了。
+[610.820,613.300]	SPK003	女	嗯，对，然后我们看完了。
+[616.190,619.180]	SPK003	女	嗯，我可能比较喜欢的是。
+[619.340,625.750]	SPK003	女	中秋节吧，中秋节we can eat the moon cake就是月饼。
+[629.090,630.883]	SPK003	女	yeah the moon cake。
+[633.391,634.457]	0	none	[NPS]
+[634.760,635.260]	SPK003	女	yeah。
+[641.207,642.515]	SPK003	女	啊。
+[643.070,648.010]	SPK003	女	the egg do you know the egg，就鸡蛋味儿的鸡蛋儿的月饼，yeah。
+[649.790,650.380]	SPK003	女	yeah。
+[656.060,657.728]	SPK003	女	yeah，fish。
+[658.072,658.683]	0	none	[NPS]
+[658.760,660.592]	SPK003	女	i don't know，i don't know。
+[660.592,661.358]	0	none	[SONANT]
+[661.362,665.871]	SPK003	女	i like fish very much，就我平常其实是很喜欢吃鱼的，但是。
+[666.158,672.340]	SPK003	女	i don't know we can put the fish in the moon cake，就我不知道鱼居然可以被放到月饼里面。
+[677.930,678.430]	SPK003	女	嗯。
+[678.650,685.990]	SPK003	女	啊you created it。you created it，next time you can invite me to eat the fish moon cake。
+[686.240,688.613]	SPK003	女	就下一次你可以邀请我去做。
+[691.702,693.280]	SPK003	女	啊，the fruit。
+[693.620,696.430]	SPK003	女	the fruit moon cake，i like it。
+[697.430,699.130]	SPK003	女	i like strawberry。
+[699.590,702.160]	SPK003	女	strawberry moon cake，strawberry moon cake。
+[706.280,709.519]	SPK003	女	a lot of fruits，such as grapes。
+[711.560,712.960]	SPK003	女	yeah i like coffee。
+[713.360,716.776]	SPK003	女	你是可以做咖啡味的moon cake吗？
+[717.774,718.351]	0	none	[SONANT]
+[718.351,722.411]	SPK003	女	哦，i like chocolate moon cake，你可以做巧克力的月饼。
+[722.660,725.500]	SPK003	女	对，所以呢，这里有很多。
+[726.230,730.565]	SPK003	女	哦，that's delicious that's delicious。yeah。yeah。
+[730.837,735.337]	SPK003	女	其实不仅是因为中秋节，我们可以eat moon cake。
+[735.440,739.116]	SPK003	女	更多的原因the more reason is that，嗯。
+[739.430,743.140]	SPK003	女	you know i stay in成都，you stay in成都。
+[743.270,749.011]	SPK003	女	yeah，we will go back to the hometown，就我们，因为平常都是在工作。
+[749.198,753.443]	SPK003	女	所以呢，在中秋节的时候，我们就会回老家go to the hometown。
+[753.710,758.402]	SPK003	女	并且呢，stay with our parents grandparents with our family。
+[758.599,765.021]	SPK003	女	我们就会回老家嘛，去和我们的亲人待在一起，一起去吃一个团圆饭。
+[765.650,770.972]	SPK003	女	we eat the，we eat the rice，the lunch with our family。
+[770.972,774.550]	SPK003	女	我觉得这才是有意义的事情，the meaningful thing。
+[779.267,779.830]	SPK003	女	yeah。
+[781.520,782.140]	SPK003	女	yeah。
+[783.057,785.045]	0	none	[ENS]
+[788.360,789.040]	SPK003	女	yeah。
+[796.550,797.170]	SPK003	女	yeah。
+[803.450,805.045]	SPK003	女	yeah。
+[808.520,811.481]	SPK003	女	yeah，i think so，就我也很喜欢这种。
+[811.730,818.016]	SPK003	女	比较温馨一点，it's very warm i think。we tell stories。
+[818.516,821.200]	SPK003	女	yeah，我们一起讲故事呀。
+[823.730,828.940]	SPK003	女	yeah i think so。嗯平常，然后呢，过完这个。
+[829.160,832.816]	SPK003	女	嗯，中秋节之后中秋是middle。
+[832.816,833.426]	0	none	[SONANT]
+[833.426,835.030]	SPK003	女	middle，how to say？
+[836.360,837.718]	SPK003	女	the middle festival。
+[838.910,839.650]	SPK003	女	yeah。
+[840.380,841.090]	SPK003	女	maybe。
+[842.480,843.461]	SPK003	女	yeah。
+[845.240,845.830]	SPK003	女	yeah。
+[847.650,849.444]	0	none	[ENS]
+[849.815,850.426]	0	none	[NPS]
+[850.760,855.160]	SPK003	女	yeah we will see the moon，就你们那儿的月亮是满月。
+[859.910,860.410]	SPK003	女	yeah。
+[861.260,861.820]	SPK003	女	yeah。
+[866.030,866.980]	SPK003	女	瓜子儿。
+[866.980,868.399]	0	none	[SONANT]
+[868.399,869.500]	SPK003	女	and fruits。
+[873.170,874.000]	0	none	[NPS]
+[876.410,878.590]	SPK003	女	yeah pears，yeah。
+[882.050,882.820]	SPK003	女	yeah。
+[884.660,886.895]	SPK003	女	bananas，strawberries。
+[887.420,888.197]	SPK003	女	yeah。
+[889.580,890.080]	SPK003	女	yeah。
+[896.390,899.680]	SPK003	女	对。a lot of kinds of moon cake。
+[899.917,904.752]	SPK003	女	嗯，然后呢，除了中秋节，中秋节过后after the。
+[904.999,911.680]	SPK003	女	middle festival，你最喜欢的节日，what kind of spring festival do you，what kind of is？
+[912.110,914.290]	SPK003	女	嗯，festival do you like？
+[917.030,918.176]	SPK003	女	yeah i know。
+[918.530,919.270]	SPK003	女	i know。
+[919.272,919.601]	0	none	[*]
+[919.601,923.110]	SPK003	女	we will eat，the rice ball。right？
+[923.180,927.360]	SPK003	女	the rice ball，饭团饭球，也就是，粽子。
+[929.870,930.430]	SPK003	女	yeah。
+[932.570,933.250]	SPK003	女	yeah。
+[933.920,939.752]	SPK003	女	因为我们有一个，死去的，伟大的诗人，a poet。
+[940.040,941.273]	SPK003	女	his name is。
+[945.320,945.850]	SPK003	女	yeah。
+[947.690,948.370]	SPK003	女	yeah。
+[955.790,961.960]	SPK003	女	yeah，其实你知道饭团就粽子它的存在吗？我记得好像就是因为去。
+[962.390,968.361]	SPK003	女	纪念一个去世的诗人叫做屈原，yeah，his name is屈原。
+[968.558,971.535]	SPK003	女	yeah we use，嗯，你知道我们还有。
+[971.840,972.725]	SPK003	女	我们。
+[974.240,975.970]	SPK003	女	ok，the。
+[976.250,979.570]	SPK003	女	我记得这个诗人the poet is。
+[979.880,985.270]	SPK003	女	嗯dying the river就他在河里面，他是死掉了对不对？
+[986.090,987.010]	SPK003	女	然后呢。
+[987.320,988.480]	SPK003	女	人们为了去。
+[990.170,994.171]	SPK003	女	yeah，然后人们为了纪念他就choose。
+[994.171,994.432]	0	none	[*]
+[994.746,997.120]	SPK003	女	through the，rice ball。
+[997.340,1000.510]	SPK003	女	用这个米饭，用这个粽子。
+[1001.240,1006.780]	SPK003	女	对去纪念他。然后呢，我们也有dragon boat，就是赛龙舟。
+[1007.060,1008.520]	SPK003	女	然后，去。
+[1009.070,1014.400]	SPK003	女	对，to have the competition就有这个竞赛嘛，都是为了来纪念这个诗。
+[1019.017,1019.440]	SPK003	女	yeah。
+[1026.230,1026.880]	SPK003	女	yeah。
+[1029.410,1030.799]	SPK003	女	yeah yeah yeah。
+[1031.000,1036.843]	SPK003	女	let the fish don't eat his body，就这个诗人the poet is dying。
+[1037.238,1041.367]	SPK003	女	is died in the river，就他其实是在河里面死掉了对不对？
+[1041.829,1047.882]	SPK003	女	然后，嗯，many people就很多人chose to put the rice ball in the river。
+[1048.040,1055.590]	SPK003	女	就会选择把这个饭团扔到河里面去，让这些鱼don't eat his body，就不要让这些鱼吃掉他的身体。
+[1060.490,1064.362]	SPK003	女	yeah，你知道吗？其实端午节已经很近了。
+[1064.707,1065.373]	SPK003	女	the。
+[1065.373,1066.080]	0	none	[SONANT]
+[1066.080,1070.930]	SPK003	女	the festival is coming yeah，i have a lot of粽子，in my fridge。
+[1070.930,1075.900]	SPK003	女	就其实在我的冰箱里面都有很多的，嗯rice ball就粽子。
+[1077.440,1078.494]	SPK003	女	yeah。
+[1078.790,1079.350]	SPK003	女	yeah。
+[1082.870,1083.606]	SPK003	女	yeah。
+[1085.000,1085.441]	SPK003	女	yeah。
+[1085.660,1086.550]	0	none	[*]
+[1086.680,1087.660]	SPK003	女	在。
+[1088.388,1089.013]	0	none	[*]
+[1089.013,1094.200]	SPK003	女	ok，for the traditional，do you know the national day？
+[1095.620,1097.800]	SPK003	女	the national day，国庆节。
+[1099.010,1099.570]	SPK003	女	yeah。
+[1103.000,1103.590]	SPK003	女	yeah。
+[1108.490,1109.080]	SPK003	女	yeah。
+[1110.830,1116.013]	SPK003	女	嗯，暂时i don't i didn't eat other things，就除了。
+[1116.290,1119.670]	SPK003	女	端午节吃粽子，我暂时不会吃其他的东西。
+[1119.950,1122.220]	SPK003	女	i don't eat to other things。
+[1132.250,1134.700]	SPK003	女	yeah it's very delicious you like it。
+[1134.700,1135.340]	0	none	[ENS]
+[1135.340,1136.050]	SPK003	女	yeah。
+[1138.400,1139.800]	SPK003	女	yeah，其实。
+[1140.380,1142.710]	SPK003	女	yeah，其实怎么说呢。
+[1142.930,1147.600]	SPK003	女	嗯，you know，the rice ball is very。
+[1147.670,1152.933]	SPK003	女	if you are hungry，如果你在饿的时候你吃了这个rice ball他会感觉。
+[1153.189,1157.004]	SPK003	女	让你感觉你的身体都不再饥饿，充满力量，所以。
+[1157.330,1161.422]	SPK003	女	嗯，靠近端午节的时候near the端午festival。
+[1161.680,1164.820]	SPK003	女	嗯，我就会吃很多的。
+[1166.179,1169.219]	SPK003	女	嗯，粽子，因为会让我每天都充满精神。
+[1171.872,1173.152]	0	none	[ENS]
+[1174.970,1175.740]	SPK003	女	yeah。
+[1177.400,1178.050]	SPK003	女	yeah。
+[1184.270,1185.010]	SPK003	女	yeah。
+[1187.000,1187.880]	SPK003	女	嗯。
+[1188.410,1188.925]	SPK003	女	yeah。
+[1189.213,1189.499]	0	none	[*]
+[1189.499,1196.001]	SPK003	女	你有一些you have a lot of things to remember，就你除了自己的生活，你也需要去牢记一些。
+[1196.270,1199.830]	SPK003	女	有意义的故事some meaningful story，i think。
+[1201.460,1204.720]	SPK003	女	嗯，yeah，然后，除了。
+[1205.030,1206.580]	SPK003	女	对，the。
+[1206.860,1210.963]	SPK003	女	除了除了这个middle festival就中秋节。
+[1211.240,1212.340]	SPK003	女	然后呢。
+[1212.590,1215.220]	SPK003	女	国庆节the national day。
+[1216.130,1223.891]	SPK003	女	yeah the national day we have one two three four five six seven，seven day's off。就我们可以连着休七天。
+[1226.248,1229.650]	SPK003	女	i'm very，happy to have this holiday。
+[1233.620,1234.300]	SPK003	女	yeah。
+[1238.144,1238.697]	SPK003	女	yeah。
+[1238.833,1239.254]	0	none	[*]
+[1239.254,1244.311]	SPK003	女	只是他们的时间their time are different，就比如中国是in。
+[1244.750,1252.687]	SPK003	女	嗯october十月，但是呢美国日本。maybe they are in different time，就它们国庆的时间是different不一样的。
+[1254.470,1255.383]	SPK003	女	嗯，对。
+[1255.638,1259.911]	SPK003	女	然后呢，the national day is in october。
+[1260.080,1266.351]	SPK003	女	from the first to the seventh day就国庆的话，它是，十月一号到七号嘛。
+[1266.620,1270.900]	SPK003	女	嗯嗯，你觉得你对这个节日，有什么印象呢？
+[1277.330,1281.243]	SPK003	女	yeah it's very important for all the chinese people all right。
+[1281.500,1285.780]	SPK003	女	it's very important因为，是我们中国解放的。
+[1286.180,1293.280]	SPK003	女	日子。然后呢，在国庆的话，你会做什么？do you have any arrangement for the national day？
+[1293.740,1295.350]	SPK003	女	go to hometown？
+[1295.900,1296.595]	SPK003	女	or。
+[1297.070,1298.200]	SPK003	女	go to。
+[1302.770,1303.480]	0	none	[*]
+[1305.199,1306.246]	0	none	[NPS]
+[1308.770,1312.780]	SPK003	女	yeah the flags。the flags yeah。
+[1317.500,1322.094]	SPK003	女	yeah you feel very proud you feel very proud。
+[1323.560,1328.193]	SPK003	女	嗯，ok i know，嗯because of the national day you will。
+[1328.193,1328.559]	0	none	[*]
+[1328.559,1330.120]	SPK003	女	feel very happy。
+[1330.460,1332.723]	SPK003	女	and，you know the。
+[1333.026,1334.490]	SPK003	女	country is。
+[1334.490,1335.444]	0	none	[*]
+[1335.444,1341.052]	SPK003	女	independent就国家是独立的不依赖的，并且呢每个人都是，很开心的。
+[1341.230,1346.170]	SPK003	女	你知道我们在国庆的时候还会看那个电视，watch the t v。
+[1346.450,1348.518]	SPK003	女	去看阅兵，yeah。
+[1349.820,1350.285]	0	none	[NPS]
+[1357.340,1360.690]	SPK003	女	yeah it's a good time for you to travel。
+[1362.980,1363.900]	SPK003	女	yeah。
+[1364.180,1367.052]	SPK003	女	that's seven days right seven days so。
+[1367.360,1367.964]	SPK003	女	yeah。
+[1368.410,1371.520]	SPK003	女	you know seven days you can go to u s a。
+[1372.070,1374.332]	SPK003	女	yeah have a travel。and go back。
+[1374.332,1375.108]	0	none	[LAUGHTER]
+[1375.108,1378.269]	SPK003	女	就七天的时间，你都可以去美国玩一趟再回来了。
+[1379.960,1380.550]	SPK003	女	yeah。
+[1381.280,1382.890]	SPK003	女	yeah i think so。
+[1383.770,1390.150]	SPK003	女	yeah，嗯，你平常在国庆的时候，我们聊了它有意义的事情，the meaningful things。
+[1390.370,1396.450]	SPK003	女	在国庆的时候，你通常会去安排什么呢？do you have any，arrangement for the national day？
+[1397.420,1399.927]	SPK003	女	go home，go back to your hometown？
+[1401.620,1402.180]	SPK003	女	嗯哼。
+[1403.955,1404.411]	SPK003	女	嗯。
+[1405.360,1408.540]	SPK003	女	哦，you want to do many different thing。
+[1415.330,1416.040]	SPK003	女	yeah。
+[1420.640,1421.170]	SPK003	女	yeah。
+[1424.720,1428.970]	SPK003	女	it's very good and a meaningful things for you。
+[1430.480,1431.442]	SPK003	女	ok。
+[1431.680,1436.230]	SPK003	女	ok i think，the national day is very important for me。
+[1441.910,1445.154]	SPK003	女	yeah，the road is very crowded。
+[1447.460,1451.380]	SPK003	女	yeah it's very very crowded the road。
+[1452.500,1455.381]	SPK003	女	yeah the road is very crowded嗯。
+[1455.619,1456.090]	0	none	[*]
+[1456.280,1462.942]	SPK003	女	并且呢many people in四川you know will go to甘孜阿坝重庆。
+[1463.210,1465.450]	SPK003	女	many other cities yeah。
+[1468.730,1472.661]	SPK003	女	yeah it's very hurry。嗯for this year。
+[1472.780,1479.130]	SPK003	女	嗯how do you spend your national day，就如果是今年的话，你对你的国庆有什么安排呢？
+[1483.406,1485.790]	SPK003	女	啊，you want to go outside。
+[1487.030,1489.720]	SPK003	女	i want to go outside with your boyfriend。
+[1491.320,1493.500]	SPK003	女	you have a boyfriend i don't know sorry。
+[1493.500,1494.244]	0	none	[LAUGHTER]
+[1497.016,1497.695]	0	none	[NPS]
+[1498.370,1498.990]	SPK003	女	yeah。
+[1501.430,1506.788]	SPK003	女	哦，to play。ok ok，but be careful the road is very crowded。
+[1506.788,1507.730]	0	none	[LAUGHTER]
+[1508.108,1510.743]	SPK003	女	do you have a car you can drive a car to。
+[1511.226,1512.778]	SPK003	女	go to another city。
+[1516.970,1517.530]	SPK003	女	yeah。
+[1521.680,1526.882]	SPK003	女	ok，you are going to，嗯have a list，you are going to have a list。
+[1527.158,1528.312]	SPK003	女	and the first day。
+[1528.760,1533.442]	SPK003	女	on the road，the second day collect the mountain，the third day eat the food。
+[1533.442,1534.161]	0	none	[LAUGHTER]
+[1534.587,1541.509]	SPK003	女	everyday do any do many different thing，就你去的每一天你都要做好攻略，第一天去干嘛，第二天去干嘛。
+[1541.509,1541.777]	0	none	[*]
+[1541.902,1542.862]	0	none	[ENS]
+[1544.300,1545.100]	SPK003	女	yeah。
+[1549.490,1551.400]	SPK003	女	yeah the mother's day。
+[1553.420,1556.230]	SPK003	女	yeah the mother's day is coming，do you。
+[1557.313,1557.769]	0	none	[*]
+[1563.470,1563.970]	SPK003	女	yeah。
+[1565.750,1568.147]	SPK003	女	yeah you remember the wrong time。
+[1569.140,1569.640]	SPK003	女	yeah。
+[1572.440,1575.040]	SPK003	女	啊，you send the red envelope。
+[1575.290,1577.080]	SPK003	女	you forget the time。
+[1577.690,1580.200]	SPK003	女	yeah the the mother day is tomorrow。
+[1580.540,1581.640]	SPK003	女	就明天。
+[1586.750,1593.460]	SPK003	女	happy mother's day，and your mother received the envelope，就你妈妈收到了红包。and what did he。
+[1593.470,1594.210]	0	none	[*]
+[1594.850,1596.520]	SPK003	女	oh she is very happy。
+[1597.040,1597.960]	SPK003	女	are you happy？
+[1599.339,1600.134]	SPK003	女	yeah。
+[1600.580,1601.655]	0	none	[LAUGHTER]
+[1603.220,1604.560]	SPK003	女	yeah ok。
+[1606.840,1608.502]	SPK003	女	ok that's trouble。
+[1608.740,1610.013]	SPK003	女	嗯。
+[1610.330,1612.420]	SPK003	女	how about the christmas day？
+[1612.850,1613.920]	SPK003	女	can you sing the song？
+[1614.350,1617.940]	SPK003	女	yeah，we wish you a merry christmas。
+[1618.280,1621.098]	SPK003	女	we wish you a merry christmas。
+[1621.310,1626.310]	SPK003	女	we wish you a merry christmas and happy new year。
+[1627.520,1628.320]	0	none	[*]
+[1628.600,1630.814]	SPK003	女	maybe from the u s a right？
+[1631.870,1634.110]	SPK003	女	from the u s a就来自美国。
+[1637.570,1640.556]	SPK003	女	celebration day，就庆祝了节日。
+[1641.483,1642.084]	0	none	[NPS]
+[1642.310,1645.000]	SPK003	女	what did you say，你刚才说了什么？what did you say？
+[1648.298,1648.676]	0	none	[NPS]
+[1649.600,1650.160]	SPK003	女	yeah。
+[1656.410,1659.723]	SPK003	女	oh it's a new year for the u s a。
+[1659.723,1660.250]	0	none	[NPS]
+[1660.250,1662.244]	SPK003	女	oh，ok。
+[1664.240,1665.400]	SPK003	女	yeah i know。
+[1669.010,1669.690]	SPK003	女	哦。
+[1672.554,1673.602]	0	none	[ENS]
+[1673.900,1677.880]	SPK003	女	he，he was he was born that day，so。
+[1678.550,1680.024]	SPK003	女	ok i know。
+[1680.440,1686.802]	SPK003	女	你知道现在在中国in china many students like to have the christmas day。
+[1686.920,1693.352]	SPK003	女	就很多中国的小朋友，他们都很喜欢过christmas day，他们sing a song唱歌。
+[1693.670,1696.570]	SPK003	女	buy balloons可以买气球。
+[1696.790,1699.990]	SPK003	女	有很多的activities，有很多活动项目。
+[1702.310,1705.060]	SPK003	女	yeah the gift，the gift。
+[1706.600,1708.480]	SPK003	女	嗯，对，你在。
+[1711.880,1712.710]	SPK003	女	yeah。
+[1712.998,1720.432]	SPK003	女	yeah i'm going to，i'm can't waiting for the day。就其实很多中国人都很期待过christmas day的。
+[1722.260,1722.880]	0	none	[*]
+[1723.310,1724.020]	SPK003	女	ok。
+[1724.330,1728.681]	SPK003	女	嗯，i like christmas day。我比较喜欢圣诞节。
+[1728.938,1730.103]	SPK003	女	it's very。
+[1730.660,1731.776]	SPK003	女	嗯。
+[1731.980,1733.255]	SPK003	女	romantic。
+[1733.660,1738.421]	SPK003	女	romantic。i think the word is romantic，yeah浪漫。
+[1738.730,1739.230]	SPK003	女	嗯。
+[1743.620,1744.897]	SPK003	女	嗯cake。
+[1745.660,1747.940]	SPK003	女	may be cake，balloons。
+[1747.940,1748.451]	0	none	[*]
+[1748.930,1750.150]	SPK003	女	warm。
+[1750.150,1750.535]	0	none	[*]
+[1752.500,1754.950]	SPK003	女	maybe，but the christmas day。
+[1754.950,1755.367]	0	none	[NPS]
+[1755.497,1756.231]	SPK003	女	old。
+[1756.640,1757.890]	SPK003	女	so maybe you know。
+[1759.415,1763.126]	SPK003	女	oh no，the weather is very cold no。
+[1763.126,1763.861]	0	none	[*]
+[1763.861,1764.363]	0	none	[NPS]
+[1764.640,1765.430]	0	none	[SONANT]
+[1765.430,1767.520]	SPK003	女	yeah the weather is very cold。
+[1767.770,1772.871]	SPK003	女	maybe，the chicken legs or the french fries。
+[1772.990,1777.240]	SPK003	女	or the fried chicken，that's better，就炸鸡。
+[1779.980,1780.720]	SPK003	女	yeah。
+[1781.210,1782.340]	SPK003	女	i like fish。
+[1782.830,1787.950]	SPK003	女	i like fish is good my for my body，就鱼它是很好的对我身体很好。
+[1788.200,1789.537]	SPK003	女	it's good for my health。
+[1790.480,1791.160]	SPK003	女	哦。
+[1793.866,1796.860]	SPK003	女	ok you want to joining with us。
+[1796.860,1798.060]	0	none	[LAUGHTER]
+[1798.400,1799.080]	SPK003	女	yeah。
+[1802.326,1802.770]	SPK003	女	yeah。
+[1805.514,1811.992]	SPK003	女	嗯holiday。know the halloween you know。the halloween，万圣节。
+[1812.620,1815.576]	SPK003	女	very very famous in。
+[1816.550,1818.852]	SPK003	女	u s a，就在美国的话。
+[1821.590,1822.555]	SPK003	女	oh you don't like。
+[1822.555,1822.914]	0	none	[*]
+[1822.914,1824.843]	SPK003	女	the halloween because it's very。
+[1825.384,1826.290]	SPK003	女	scary。
+[1826.750,1828.390]	SPK003	女	yeah it's very scary。
+[1829.900,1830.610]	SPK003	女	yeah。
+[1830.890,1834.480]	SPK003	女	ok the time is limited，时间到了。
+[1838.720,1839.314]	SPK003	女	ok。
+[1839.830,1840.570]	SPK003	女	ok。
+[1846.910,1847.410]	SPK003	女	yeah。
+[1847.690,1849.030]	SPK003	女	happy children's day。
+[1851.561,1852.767]	0	none	[LAUGHTER]
+[1852.767,1857.670]	SPK003	女	i know，i know，you can eat candies，就你可以吃糖果。
+[1861.520,1862.020]	SPK003	女	yeah。
+[1862.619,1868.170]	SPK003	女	啊，congratulations that's romantic，那是非常浪漫的。
+[1872.410,1875.483]	SPK003	女	啊，you you are always the baby，you are always。
+[1875.483,1875.799]	0	none	[*]
+[1875.799,1876.720]	SPK003	女	the kid。
+[1878.131,1881.100]	SPK003	女	哦，that's fine。
+[1881.397,1882.810]	SPK003	女	that's fine。
+[1883.270,1887.250]	SPK003	女	嗯，do you like candies？你喜不喜欢糖果？
+[1890.080,1893.262]	SPK003	女	no，ok do you like cake？
+[1893.650,1895.380]	SPK003	女	cakes，小蛋糕。
+[1896.680,1898.680]	SPK003	女	yeah ice cream cake chocolate。
+[1898.680,1898.947]	0	none	[*]
+[1898.947,1900.040]	0	none	[LAUGHTER]
+[1900.040,1902.730]	SPK003	女	do you like balloons？那你喜欢气球吗？
+[1905.530,1906.806]	SPK003	女	yeah。
+[1907.030,1912.570]	SPK003	女	oh that's fine，that's fine，i like happy children，i like happy children's day。
+[1912.760,1918.394]	SPK003	女	当我很小的时候，我们都会buy，buy balloons，我们会买那个气球嘛。
+[1918.737,1919.793]	SPK003	女	the balloons。
+[1920.020,1923.022]	SPK003	女	然后我们放到我们的house里它可以。
+[1923.410,1928.500]	SPK003	女	keep yeah，keep for a long time，就它其实可以在家里面待上几天。
+[1929.530,1931.162]	SPK003	女	嗯，maybe candy。
+[1931.162,1932.105]	0	none	[LAUGHTER]
+[1932.105,1935.140]	SPK003	女	the candy is a gift，就糖果就是礼物。
+[1937.510,1938.250]	SPK003	女	yeah。
