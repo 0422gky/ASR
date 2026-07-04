@@ -21,10 +21,12 @@
 import os
 import sys
 import logging
+import json
 from pathlib import Path
 
 # —— 内部模块 ——
 from asr_utils import get_model, transcribe_file, convert_to_wav, get_audio_duration
+from industrial_postprocess import postprocess_text
 
 logging.basicConfig(
     level=logging.INFO,
@@ -68,6 +70,9 @@ def batch_process(
     use_gpu: bool = True,
     use_half: bool = False,
     recursive: bool = False,
+    postprocess: bool = False,
+    terms_config: str = None,
+    enable_fuzzy: bool = False,
 ):
     """
     批量处理文件夹中的所有音频文件, 保存转录结果.
@@ -143,6 +148,15 @@ def batch_process(
                 fail_count += 1
                 continue
 
+            postprocess_result = None
+            if postprocess:
+                postprocess_result = postprocess_text(
+                    text,
+                    config_path=terms_config,
+                    enable_fuzzy=enable_fuzzy,
+                )
+                text = postprocess_result["final_text"]
+
             # 显示结果
             # 截断显示 (避免过长)
             display_text = text[:120] + "..." if len(text) > 120 else text
@@ -156,6 +170,12 @@ def batch_process(
             with open(output_file, "w", encoding="utf-8") as f:
                 f.write(text)
             print(f"  已保存: {output_file}")
+
+            if postprocess_result is not None:
+                log_file = os.path.join(output_folder, f"{Path(audio_file).stem}.correction_log.json")
+                with open(log_file, "w", encoding="utf-8") as f:
+                    json.dump(postprocess_result["correction_log"], f, ensure_ascii=False, indent=2)
+                print(f"  后处理日志: {log_file}")
 
             success_count += 1
 
@@ -205,6 +225,18 @@ if __name__ == "__main__":
         "-r", "--recursive", action="store_true",
         help="递归处理子文件夹中的所有音频文件"
     )
+    parser.add_argument(
+        "--postprocess", action="store_true",
+        help="启用工业术语后处理"
+    )
+    parser.add_argument(
+        "--terms-config", default=None,
+        help="工业术语 YAML 配置路径 (默认: configs/industrial_terms.yaml)"
+    )
+    parser.add_argument(
+        "--enable-fuzzy", action="store_true",
+        help="启用保守模糊术语纠错 (默认关闭)"
+    )
     args = parser.parse_args()
 
     batch_process(
@@ -213,4 +245,7 @@ if __name__ == "__main__":
         use_gpu=not args.cpu,
         use_half=args.half,
         recursive=args.recursive,
+        postprocess=args.postprocess,
+        terms_config=args.terms_config,
+        enable_fuzzy=args.enable_fuzzy,
     )
