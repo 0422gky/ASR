@@ -7,6 +7,7 @@ if str(ASR_ROOT) not in sys.path:
 
 from industrial_postprocess import postprocess_text
 from industrial_normalizer import normalize_text
+from tools.build_industrial_eval_csv import infer_reference_id, reconstruct_asr_text
 
 
 def final_text(text):
@@ -59,3 +60,18 @@ def test_spoken_error_code_correction_log():
     assert result["correction_log"][0]["rule"] == "spoken_error_code"
     assert result["correction_log"][0]["source"] == "负幺零六七幺八六幺三五"
     assert result["correction_log"][0]["replacement"] == "-1067186135"
+
+
+def test_reconstruct_asr_text_from_correction_log():
+    final = "编码器错误提示报错-1067186135怎么回事"
+    log = [{
+        "rule": "spoken_error_code",
+        "source": "负幺零六七幺八六幺三五",
+        "replacement": "-1067186135",
+    }]
+    assert reconstruct_asr_text(final, log) == "编码器错误提示报错负幺零六七幺八六幺三五怎么回事"
+
+
+def test_infer_reference_id_from_train_stem():
+    assert infer_reference_id("BY-1-7") == "7"
+    assert infer_reference_id("17号台词无噪音") == "17"
