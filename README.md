@@ -16,6 +16,17 @@ program_and_data/
 ├── tests/
 │   └── test_industrial_postprocess.py
 └── FireRedASR2S/                   ← ASR 系统 + 预训练模型
+├─data                              ← AISHELL 和 MagicHuB 数据，之后用来微调AED模型
+│  ├─AISHELL
+│  │  ├─train
+│  │  │  ├─S0002
+│  │  │  └─S0003
+│  │  ├─transcript
+│  │  └─wav
+│  └─MagicHub
+│      └─development
+│          ├─TXT
+│          └─WAV
 ```
 
 # QuickStart
@@ -187,3 +198,25 @@ python -m pytest tests/test_industrial_postprocess.py
 - `MC TCS坐标系 -> mcTCs坐标系`
 - `AC O P O S trak -> AcOPOStrak`
 - `a工位 -> A工位`
+
+# 数据集构建
+工业 60 条 × repeat 10
+AISHELL-1 小子集 1000 条
+MagicHub 普通话 500 条
+
+
+
+## AISHELL-1
+Aishell is an open-source Chinese Mandarin speech corpus published by Beijing Shell Shell Technology Co.,Ltd. 400 people from different accent areas in China are invited to participate in the recording, which is conducted in a quiet indoor environment using high fidelity microphone and downsampled to 16kHz. The manual transcription accuracy is above 95%, through professional speech annotation and strict quality inspection. The data is free for academic use. We hope to provide moderate amount of data for new researchers in the field of speech recognition.
+
+You can cite the data using the following BibTeX entry:
+
+@inproceedings{aishell_2017,
+title={AIShell-1: An Open-Source Mandarin Speech Corpus and A Speech Recognition Baseline},
+author={Hui Bu, Jiayu Du, Xingyu Na, Bengu Wu, Hao Zheng},
+booktitle={Oriental COCOSDA 2017},
+pages={Submitted},
+year={2017}
+}
+
+
