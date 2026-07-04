@@ -39,3 +39,23 @@ def test_workstation_case():
 
 def test_normalizer_handles_workstation_case():
     assert normalize_text("从a工位移动")["text"] == "从A工位移动"
+
+
+def test_spoken_error_code_after_error_context():
+    assert final_text("报错负幺零六七幺八六幺三五") == "报错-1067186135"
+
+
+def test_spoken_error_code_full_sentence():
+    text = "编码器错误提示报错负幺零六七幺八六幺三五怎么回事"
+    assert final_text(text) == "编码器错误提示报错-1067186135怎么回事"
+
+
+def test_existing_error_code_is_preserved():
+    assert final_text("报错-1067186135怎么回事") == "报错-1067186135怎么回事"
+
+
+def test_spoken_error_code_correction_log():
+    result = normalize_text("报错负幺零六七幺八六幺三五")
+    assert result["correction_log"][0]["rule"] == "spoken_error_code"
+    assert result["correction_log"][0]["source"] == "负幺零六七幺八六幺三五"
+    assert result["correction_log"][0]["replacement"] == "-1067186135"

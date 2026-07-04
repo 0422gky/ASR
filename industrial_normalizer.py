@@ -13,11 +13,27 @@ from typing import Callable
 
 
 DEFAULT_UNITS = ("秒", "度", "分钟", "毫米", "厘米", "米")
+SPOKEN_DIGITS = {
+    "零": "0",
+    "〇": "0",
+    "一": "1",
+    "幺": "1",
+    "二": "2",
+    "两": "2",
+    "三": "3",
+    "四": "4",
+    "五": "5",
+    "六": "6",
+    "七": "7",
+    "八": "8",
+    "九": "9",
+}
 
 
 @dataclass
 class NormalizerConfig:
     convert_chinese_numbers: bool = True
+    normalize_spoken_error_codes: bool = True
     normalize_workstations: bool = True
     normalize_model_case: bool = True
     normalize_unit_spacing: bool = True
@@ -74,6 +90,9 @@ class IndustrialNormalizer:
         correction_log: list[dict] = []
         normalized = text or ""
 
+        if self.config.normalize_spoken_error_codes:
+            normalized = self._normalize_spoken_error_codes(normalized, correction_log)
+
         if self.config.convert_chinese_numbers:
             normalized = self._normalize_chinese_numbers(normalized, correction_log)
 
@@ -87,6 +106,35 @@ class IndustrialNormalizer:
             normalized = self._normalize_model_case(normalized, correction_log)
 
         return {"text": normalized, "correction_log": correction_log}
+
+    def _normalize_spoken_error_codes(self, text: str, log: list[dict]) -> str:
+        context = r"(报错|错误码|错误提示|故障码)"
+        digit_chars = "".join(SPOKEN_DIGITS)
+        pattern = re.compile(rf"({context})(负)?([{digit_chars}](?:\s*[{digit_chars}]){{5,}})")
+
+        def repl(match: re.Match) -> str:
+            context_text = match.group(1)
+            sign = "-" if match.group(3) else ""
+            spoken_code = match.group(4)
+            digits = "".join(
+                SPOKEN_DIGITS[char]
+                for char in spoken_code
+                if char in SPOKEN_DIGITS
+            )
+            if len(digits) < 6:
+                return match.group(0)
+
+            source = f"{match.group(3) or ''}{spoken_code}"
+            replacement = f"{sign}{digits}"
+            log.append({
+                "rule": "spoken_error_code",
+                "source": source,
+                "replacement": replacement,
+                "span": [match.start(3) if match.group(3) else match.start(4), match.end(4)],
+            })
+            return f"{context_text}{replacement}"
+
+        return pattern.sub(repl, text)
 
     def _normalize_chinese_numbers(self, text: str, log: list[dict]) -> str:
         unit_pattern = "|".join(re.escape(unit) for unit in self.config.units)
