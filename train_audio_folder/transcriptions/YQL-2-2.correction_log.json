@@ -1,0 +1,15 @@
+[
+  {
+    "rule": "term_alias",
+    "source": "铜制密封条",
+    "replacement": "铜质密封条",
+    "canonical": "铜质密封条",
+    "alias": "铜制密封条",
+    "category": "product",
+    "priority": 80,
+    "span": [
+      20,
+      25
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "rule": "chinese_number_to_digit",
+    "source": "二十秒",
+    "replacement": "20秒",
+    "span": [
+      23,
+      26
+    ]
+  },
+  {
+    "rule": "workstation_case",
+    "source": "a工位",
+    "replacement": "A工位",
+    "span": [
+      8,
+      11
+    ]
+  },
+  {
+    "rule": "workstation_case",
+    "source": "b工位",
+    "replacement": "B工位",
+    "span": [
+      13,
+      16
+    ]
+  },
+  {
+    "rule": "workstation_case",
+    "source": "b工位",
+    "replacement": "B工位",
+    "span": [
+      18,
+      21
+    ]
+  },
+  {
+    "rule": "workstation_case",
+    "source": "c工位",
+    "replacement": "C工位",
+    "span": [
+      31,
+      34
+    ]
+  }
+]

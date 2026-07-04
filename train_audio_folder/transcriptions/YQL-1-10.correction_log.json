@@ -1,0 +1,15 @@
+[
+  {
+    "rule": "term_alias",
+    "source": "mctcs坐标系",
+    "replacement": "mcTCs坐标系",
+    "canonical": "mcTCs坐标系",
+    "alias": "mctcs坐标系",
+    "category": "coordinate",
+    "priority": 90,
+    "span": [
+      17,
+      25
+    ]
+  }
+]

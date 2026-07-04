@@ -1,0 +1,11 @@
+[
+  {
+    "rule": "chinese_number_to_digit",
+    "source": "四十度",
+    "replacement": "40度",
+    "span": [
+      19,
+      22
+    ]
+  }
+]
