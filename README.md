@@ -12,9 +12,11 @@ program_and_data/
 │   └── industrial_terms.yaml       ← 工业术语词表
 ├── tools/
 │   ├── build_industrial_eval_csv.py ← 从转录结果整理评估输入 CSV
+│   ├── build_finetune_manifest.py  ← 构建微调训练/验证 manifest
 │   └── evaluate_industrial_asr.py  ← 后处理效果评估脚本
 ├── tests/
-│   └── test_industrial_postprocess.py
+│   ├── test_industrial_postprocess.py
+│   └── test_build_finetune_manifest.py
 └── FireRedASR2S/                   ← ASR 系统 + 预训练模型
 ├─data                              ← AISHELL 和 MagicHuB 数据，之后用来微调AED模型
 │  ├─AISHELL
@@ -203,6 +205,66 @@ python -m pytest tests/test_industrial_postprocess.py
 工业 60 条 × repeat 10
 AISHELL-1 小子集 1000 条
 MagicHub 普通话 500 条
+
+## 微调 manifest 构建
+
+`FireRedASR2S` 当前仓库主要提供推理代码，未提供明确训练 manifest 格式。因此这里先生成通用 `jsonl`，同时输出简单 `tsv`，方便后续接入 FireRedASR2-AED 微调脚本。
+
+默认混合：
+
+- 工业数据：来自 `train_audio_folder`，按 `测试语音文本原稿.txt` 的编号映射到音频文件名末尾编号，例如 `YQL-1-5` 对应第 5 条标注。
+- AISHELL：来自 `data/AISHELL`，只保留本地已有 wav 且有 transcript 的样本。
+- MagicHub：来自 `data/MagicHub/development`，按 wav/txt 同名匹配，并从时间戳 TXT 中拆出语音片段。
+
+生成清单：
+
+```bash
+python tools/build_finetune_manifest.py \
+  --aishell-root data/AISHELL \
+  --magichub-root data/MagicHub/development \
+  --industrial-root train_audio_folder \
+  --out-dir manifests \
+  --industrial-repeat 10 \
+  --magichub-repeat 3 \
+  --aishell-repeat 1 \
+  --dev-ratio 0.1 \
+  --seed 42
+```
+
+输出文件：
+
+```text
+manifests/train_mix.jsonl
+manifests/dev_mix.jsonl
+manifests/train_mix.tsv
+manifests/dev_mix.tsv
+manifests/data_stats.json
+manifests/correction_log.json
+```
+
+`jsonl` 每行示例：
+
+```json
+{"utt_id":"industrial_YQL-1-5_rep03","audio":"train_audio_folder/人声样本1/YQL-1-5.mp3","text":"帮我移动小车从A工位到B工位，在B工位停顿20秒后移动到C工位。","source":"industrial","speaker":"YQL","env":"env1","duration":5.31}
+```
+
+只查看统计、不写文件：
+
+```bash
+python tools/build_finetune_manifest.py \
+  --aishell-root data/AISHELL \
+  --magichub-root data/MagicHub/development \
+  --industrial-root train_audio_folder \
+  --out-dir manifests \
+  --dry-run
+```
+
+重要规则：
+
+- 只在 manifest 中重复样本，不复制 wav/mp3。
+- dev 集不重复采样。
+- train/dev 按 audio path 分组切分，避免同一个音频泄漏到两个集合。
+- 工业标签会走 `industrial_postprocess.py`，例如 `2o秒`、`c工位` 这类疑似错误会修正并写入 `correction_log.json`。
 
 
 
