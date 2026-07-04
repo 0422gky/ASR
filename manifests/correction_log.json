@@ -1,0 +1,254 @@
+[
+  {
+    "utt_id": "industrial_YQL-1-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_YQL-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_YQL-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  },
+  {
+    "utt_id": "industrial_YQL-2-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_YQL-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_YQL-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-1-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-2-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_BY-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-1-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-1-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-2-1",
+    "rule": "term_alias",
+    "source": "ACOPOStrak",
+    "replacement": "AcOPOStrak",
+    "canonical": "AcOPOStrak",
+    "alias": "AcOPOstrak",
+    "category": "product",
+    "priority": 100,
+    "span": [
+      4,
+      14
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOSmulti",
+    "replacement": "AcOPOSmulti",
+    "canonical": "AcOPOSmulti",
+    "alias": "acoposmulti",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      0,
+      11
+    ]
+  },
+  {
+    "utt_id": "industrial_JF-2-3",
+    "rule": "term_alias",
+    "source": "ACOPOS P3",
+    "replacement": "AcOPOS P3",
+    "canonical": "AcOPOS P3",
+    "alias": "AcOPOs P3",
+    "category": "product",
+    "priority": 95,
+    "span": [
+      12,
+      21
+    ]
+  }
+]
