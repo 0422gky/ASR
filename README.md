@@ -3,7 +3,7 @@
 program_and_data/
 ├── asr_utils.py    
 ├── test.py         ← 单文件 ASR 转录
-├── pichuli.py      ← 批量 ASR 转录
+├── batch_process.py      ← 批量 ASR 转录
 └── FireRedASR2S/   ← ASR 系统 + 预训练模型
 ```
 
@@ -21,5 +21,5 @@ FireRedASR2S/pretrained_models/FireRedASR2-AED/
 
 ## 4. 运行
 python test.py example1.mp3
-python pichuli.py audio_folder
-python pichuli.py 人声样本/人声样本1 -r
+python batch_process.py audio_folder
+python batch_process.py 人声样本/人声样本1 -r
