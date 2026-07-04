@@ -1,0 +1,100 @@
+terms:
+  - canonical: AcOPOStrak
+    aliases:
+      - AcOPOstrak
+      - AcOPOS trak
+      - AC O P O S trak
+      - acopos trak
+      - acopostrak
+    category: product
+    priority: 100
+  - canonical: AcOPOSmulti
+    aliases:
+      - AcOPOS multi
+      - acopos multi
+      - acoposmulti
+    category: product
+    priority: 95
+  - canonical: AcOPOS P3
+    aliases:
+      - AcOPOs P3
+      - AcOPOSP3
+      - acopos p3
+      - acoposP3
+    category: product
+    priority: 95
+  - canonical: ACOPOSD1
+    aliases:
+      - acopos d1
+      - ACOPOS D1
+      - AC O P O S D1
+      - ACOPOS d1
+    category: product
+    priority: 95
+  - canonical: ParID
+    aliases:
+      - par ID
+      - Par ID
+      - parid
+      - PARID
+    category: parameter
+    priority: 90
+  - canonical: mcTCs坐标系
+    aliases:
+      - MC TCS坐标系
+      - mc TCs坐标系
+      - mctcs坐标系
+      - MCTCS坐标系
+    category: coordinate
+    priority: 90
+  - canonical: 导轨
+    aliases:
+      - 轨道导轨
+    category: product
+    priority: 70
+  - canonical: 供料靴底板
+    aliases:
+      - 供料靴 底板
+      - 供料靴板
+    category: product
+    priority: 80
+  - canonical: 铜质密封条
+    aliases:
+      - 铜制密封条
+      - 铜密封条
+    category: product
+    priority: 80
+  - canonical: 尼龙密封条
+    aliases:
+      - 尼龙 密封条
+    category: product
+    priority: 80
+  - canonical: 编码器接口
+    aliases:
+      - 编码器 接口
+    category: parameter
+    priority: 75
+  - canonical: 三环参数
+    aliases:
+      - 3环参数
+      - 三 环参数
+    category: parameter
+    priority: 80
+  - canonical: A工位
+    aliases:
+      - a工位
+      - A 工位
+    category: command
+    priority: 85
+  - canonical: B工位
+    aliases:
+      - b工位
+      - B 工位
+    category: command
+    priority: 85
+  - canonical: C工位
+    aliases:
+      - c工位
+      - C 工位
+    category: command
+    priority: 85
