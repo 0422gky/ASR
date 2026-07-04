@@ -11,6 +11,7 @@ program_and_data/
 ├── configs/
 │   └── industrial_terms.yaml       ← 工业术语词表
 ├── tools/
+│   ├── build_industrial_eval_csv.py ← 从转录结果整理评估输入 CSV
 │   └── evaluate_industrial_asr.py  ← 后处理效果评估脚本
 ├── tests/
 │   └── test_industrial_postprocess.py
@@ -108,13 +109,46 @@ python test.py example1.mp3 --postprocess --terms-config configs/industrial_term
 
 # 后处理效果评估
 
-评估脚本：
+批处理会生成 `.txt` 和 `.correction_log.json`，评估前需要先整理成 `evaluate_industrial_asr.py` 所需的 CSV。
+
+## 1. 从转录结果生成评估输入 CSV
 
 ```bash
-python tools/evaluate_industrial_asr.py --input input.csv --output output.csv
+python tools/build_industrial_eval_csv.py \
+  --transcriptions-dir train_audio_folder/transcriptions \
+  --reference train_audio_folder/测试语音文本原稿.txt \
+  --audio-root train_audio_folder \
+  --output train_audio_folder/eval_input.csv
 ```
 
-输入 CSV 必须包含字段：
+生成的 CSV 字段为：
+
+```text
+id,audio_path,ref_text,asr_text
+```
+
+默认会根据 `.correction_log.json` 反推后处理前的 `asr_text`，这样可以继续用评估脚本比较后处理前后的 CER 和术语准确率。
+
+如果只想把当前 `.txt` 内容直接作为 `asr_text`，可以加：
+
+```bash
+python tools/build_industrial_eval_csv.py \
+  --transcriptions-dir train_audio_folder/transcriptions \
+  --reference train_audio_folder/测试语音文本原稿.txt \
+  --audio-root train_audio_folder \
+  --output train_audio_folder/eval_input.csv \
+  --use-final-text
+```
+
+## 2. 运行评估脚本
+
+```bash
+python tools/evaluate_industrial_asr.py \
+  --input train_audio_folder/eval_input.csv \
+  --output train_audio_folder/eval_result.csv
+```
+
+评估输入 CSV 必须包含字段：
 
 ```text
 id,audio_path,ref_text,asr_text
