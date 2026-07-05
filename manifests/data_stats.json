@@ -1,0 +1,53 @@
+{
+  "sources": {
+    "aishell": {
+      "raw_samples": 718,
+      "train_before_repeat": 646,
+      "dev": 72,
+      "train_after_repeat": 646,
+      "total_duration": 0.0,
+      "missing_transcript": 1,
+      "missing_audio": 0,
+      "skipped": [
+        {
+          "reason": "missing_transcript",
+          "item": "BAC009S0002W0413",
+          "audio": "data\\AISHELL\\train\\S0002\\BAC009S0002W0413.wav"
+        }
+      ],
+      "warnings": []
+    },
+    "magichub": {
+      "raw_samples": 8813,
+      "train_before_repeat": 8008,
+      "dev": 805,
+      "train_after_repeat": 8008,
+      "total_duration": 18965.557000000008,
+      "missing_transcript": 0,
+      "missing_audio": 0,
+      "skipped": [],
+      "warnings": []
+    },
+    "industrial": {
+      "raw_samples": 60,
+      "train_before_repeat": 54,
+      "dev": 6,
+      "train_after_repeat": 540,
+      "total_duration": 0.0,
+      "missing_transcript": 0,
+      "missing_audio": 0,
+      "skipped": [],
+      "warnings": [
+        "ignore csv without required audio/text columns: train_audio_folder\\eval_input.csv",
+        "ignore csv without required audio/text columns: train_audio_folder\\eval_result.csv"
+      ]
+    }
+  },
+  "totals": {
+    "train_before_repeat": 8708,
+    "train_after_repeat": 9194,
+    "dev": 883,
+    "corrections": 18,
+    "train_dev_audio_leakage": []
+  }
+}
