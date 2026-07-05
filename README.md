@@ -225,7 +225,7 @@ python tools/build_finetune_manifest.py \
   --industrial-root train_audio_folder \
   --out-dir manifests \
   --industrial-repeat 10 \
-  --magichub-repeat 3 \
+  --magichub-repeat 1 \
   --aishell-repeat 1 \
   --dev-ratio 0.1 \
   --seed 42
