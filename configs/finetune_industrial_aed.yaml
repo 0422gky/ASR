@@ -9,6 +9,7 @@ use_half: false
 
 batch_size: 2
 num_workers: 0
+max_audio_seconds: 30
 epochs: 2
 max_steps: 0
 smoke_max_steps: 5

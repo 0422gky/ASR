@@ -85,29 +85,77 @@ class JsonlManifestDataset(Dataset):
         return self.rows[idx]
 
 
-def load_audio(path: str) -> tuple[int, np.ndarray]:
+def load_audio(row: dict[str, Any], max_audio_seconds: float = 30.0) -> tuple[int, np.ndarray]:
+    path = str(row["audio"])
     audio_path = Path(path)
     if not audio_path.is_absolute():
         audio_path = ASR_ROOT / audio_path
+    start_s = float(row.get("start", 0.0) or 0.0)
+    end_value = row.get("end")
+    end_s = float(end_value) if end_value is not None else None
+    if end_s is not None and end_s <= start_s:
+        raise ValueError(f"Invalid audio segment for {row.get('utt_id')}: start={start_s}, end={end_s}")
+
     try:
         import soundfile as sf
 
-        wav, sample_rate = sf.read(str(audio_path), dtype="float32")
+        with sf.SoundFile(str(audio_path)) as f:
+            sample_rate = int(f.samplerate)
+            if end_s is not None:
+                start_frame = max(0, int(start_s * sample_rate))
+                end_frame = max(start_frame + 1, int(end_s * sample_rate))
+                frames = end_frame - start_frame
+                if max_audio_seconds and frames > int(max_audio_seconds * sample_rate):
+                    raise ValueError(
+                        f"Audio segment too long for {row.get('utt_id')}: "
+                        f"{frames / sample_rate:.2f}s > {max_audio_seconds:.2f}s"
+                    )
+                f.seek(start_frame)
+                wav = f.read(frames, dtype="float32")
+            else:
+                if max_audio_seconds and f.frames > int(max_audio_seconds * sample_rate):
+                    raise ValueError(
+                        f"Audio too long for {row.get('utt_id')}: "
+                        f"{f.frames / sample_rate:.2f}s > {max_audio_seconds:.2f}s"
+                    )
+                wav = f.read(dtype="float32")
         if wav.ndim > 1:
             wav = wav.mean(axis=1)
         return int(sample_rate), wav.astype(np.float32)
-    except Exception:
+    except ImportError:
         import torchaudio
 
-        wav_tensor, sample_rate = torchaudio.load(str(audio_path))
+        info = torchaudio.info(str(audio_path))
+        sample_rate = int(info.sample_rate)
+        if end_s is not None:
+            frame_offset = max(0, int(start_s * sample_rate))
+            num_frames = max(1, int((end_s - start_s) * sample_rate))
+        else:
+            frame_offset = 0
+            num_frames = info.num_frames
+        if max_audio_seconds and num_frames > int(max_audio_seconds * sample_rate):
+            raise ValueError(
+                f"Audio segment too long for {row.get('utt_id')}: "
+                f"{num_frames / sample_rate:.2f}s > {max_audio_seconds:.2f}s"
+            )
+        wav_tensor, sample_rate = torchaudio.load(
+            str(audio_path),
+            frame_offset=frame_offset,
+            num_frames=num_frames,
+        )
         if wav_tensor.size(0) > 1:
             wav_tensor = wav_tensor.mean(dim=0, keepdim=True)
         return int(sample_rate), wav_tensor.squeeze(0).numpy().astype(np.float32)
 
 
-def collate_batch(batch: list[dict[str, Any]], feat_extractor: ASRFeatExtractor, tokenizer: ChineseCharEnglishSpmTokenizer):
+def collate_batch(
+    batch: list[dict[str, Any]],
+    feat_extractor: ASRFeatExtractor,
+    tokenizer: ChineseCharEnglishSpmTokenizer,
+    max_audio_seconds: float = 30.0,
+):
     uttids = [str(row["utt_id"]) for row in batch]
-    audio_data = [load_audio(str(row["audio"])) for row in batch]
+    audio_data = [load_audio(row, max_audio_seconds=max_audio_seconds) for row in batch]
     feats, feat_lengths, durs, _, uttids = feat_extractor(audio_data, uttids)
     token_ids = []
     kept_rows = []
@@ -270,7 +318,8 @@ def main() -> None:
 
     train_dataset = JsonlManifestDataset(resolve_path(cfg["train_manifest"]))
     dev_dataset = JsonlManifestDataset(resolve_path(cfg["dev_manifest"]))
-    collate = lambda batch: collate_batch(batch, feat_extractor, tokenizer)
+    max_audio_seconds = float(cfg.get("max_audio_seconds", 30.0))
+    collate = lambda batch: collate_batch(batch, feat_extractor, tokenizer, max_audio_seconds=max_audio_seconds)
     train_loader = DataLoader(
         train_dataset,
         batch_size=int(cfg.get("batch_size", 2)),
