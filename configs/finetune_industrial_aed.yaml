@@ -1,0 +1,28 @@
+model_dir: FireRedASR2S/pretrained_models/FireRedASR2-AED
+train_manifest: manifests/train_mix.jsonl
+dev_manifest: manifests/dev_mix.jsonl
+output_dir: outputs/finetune_industrial_aed
+
+seed: 42
+use_gpu: true
+use_half: false
+
+batch_size: 2
+num_workers: 0
+epochs: 2
+max_steps: 0
+smoke_max_steps: 5
+eval_max_batches: 10
+save_every_steps: 100
+
+learning_rate: 0.00005
+weight_decay: 0.01
+grad_clip: 5.0
+ctc_weight: 0.3
+
+freeze_encoder: true
+train_decoder: true
+train_ctc: true
+
+decode_beam_size: 1
+decode_max_len: 0
