@@ -266,6 +266,68 @@ python tools/build_finetune_manifest.py \
 - train/dev 按 audio path 分组切分，避免同一个音频泄漏到两个集合。
 - 工业标签会走 `industrial_postprocess.py`，例如 `2o秒`、`c工位` 这类疑似错误会修正并写入 `correction_log.json`。
 
+## FireRedASR2-AED 微调
+
+当前 `FireRedASR2S` 仓库没有官方训练入口，因此新增了一个轻量 AED 微调脚本：
+
+```text
+tools/finetune_firered_aed.py
+configs/finetune_industrial_aed.yaml
+tools/evaluate_firered_aed_manifest.py
+tools/convert_manifest_for_firered_aed.py
+```
+
+先检查 manifest：
+
+```bash
+python tools/convert_manifest_for_firered_aed.py --input manifests/train_mix.jsonl --dry-run
+python tools/convert_manifest_for_firered_aed.py --input manifests/dev_mix.jsonl --dry-run
+```
+
+先跑 1-5 step smoke test，确认 dataloader、loss、checkpoint 正常：
+
+```bash
+python tools/finetune_firered_aed.py \
+  --config configs/finetune_industrial_aed.yaml \
+  --smoke-test
+```
+
+默认配置会冻结 encoder，只训练 decoder 和 CTC 头，避免小规模工业数据过拟合。当前没有强行加入 LoRA，因为仓库里的 AED 是自定义 PyTorch 模块，没有现成 LoRA 训练路径。
+
+正式微调命令：
+
+```bash
+python tools/finetune_firered_aed.py --config configs/finetune_industrial_aed.yaml
+```
+
+默认输出目录：
+
+```text
+outputs/finetune_industrial_aed/
+```
+
+评估 baseline：
+
+```bash
+python tools/evaluate_firered_aed_manifest.py \
+  --model-dir FireRedASR2S/pretrained_models/FireRedASR2-AED \
+  --manifest manifests/dev_mix.jsonl \
+  --output-csv outputs/baseline_dev_eval.csv \
+  --postprocess
+```
+
+评估微调后模型：
+
+```bash
+python tools/evaluate_firered_aed_manifest.py \
+  --model-dir outputs/finetune_industrial_aed \
+  --manifest manifests/dev_mix.jsonl \
+  --output-csv outputs/finetune_dev_eval.csv \
+  --postprocess
+```
+
+评估指标包含 CER、工业术语准确率、数字准确率、错误码准确率、工位准确率。
+
 
 
 ## AISHELL-1
