@@ -17,6 +17,7 @@ import random
 import re
 import shutil
 import sys
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -154,13 +155,26 @@ def collate_batch(
     tokenizer: ChineseCharEnglishSpmTokenizer,
     max_audio_seconds: float = 30.0,
 ):
-    uttids = [str(row["utt_id"]) for row in batch]
-    audio_data = [load_audio(row, max_audio_seconds=max_audio_seconds) for row in batch]
+    kept_input_rows = []
+    audio_data = []
+    uttids = []
+    for row in batch:
+        try:
+            audio_data.append(load_audio(row, max_audio_seconds=max_audio_seconds))
+            kept_input_rows.append(row)
+            uttids.append(str(row["utt_id"]))
+        except Exception as exc:
+            warnings.warn(
+                f"Skip unreadable audio utt_id={row.get('utt_id')} "
+                f"audio={row.get('audio')} error={exc}"
+            )
+    if not audio_data:
+        return None
     feats, feat_lengths, durs, _, uttids = feat_extractor(audio_data, uttids)
     token_ids = []
     kept_rows = []
     kept_durs = []
-    for row, dur in zip(batch, durs):
+    for row, dur in zip(kept_input_rows, durs):
         _, ids = tokenizer.tokenize(str(row["text"]))
         if ids:
             token_ids.append(torch.tensor(ids, dtype=torch.long))
